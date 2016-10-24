@@ -1,4 +1,4 @@
-package tarang.vodafone.firemoon.com.vodafonetarang;
+package com.firemoon.vodafonetarang1;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

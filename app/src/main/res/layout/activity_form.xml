@@ -1,0 +1,302 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+      android:background="@color/holo_red_dark"
+
+    tools:context=".LoginActivity">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="@color/btncolor" app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Raise Ticket"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:scrollbars="none"
+
+        >
+
+        <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/logo"/>
+
+        <LinearLayout
+
+            android:layout_marginTop="10dp"
+            android:id="@+id/email_login_form1" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel">
+
+                <EditText android:id="@+id/msisdntxt" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="MSISDN"
+                    android:inputType="number" android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/radio_4g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4G"
+                    android:textColor="@color/white"
+
+                    />
+                <RadioButton android:id="@+id/radio_3g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3G"
+                    android:textColor="@color/white"
+                    android:checked="true"
+                    />
+                <RadioButton android:id="@+id/radio_2g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2G"
+                    android:textColor="@color/white"
+
+                    />
+            </RadioGroup>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/TextLabel">
+
+                <EditText android:id="@+id/name" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Name"
+                    android:inputType="textEmailAddress" android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/TextLabel">
+
+                <EditText android:id="@+id/address" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Address"
+                    android:inputType="textEmailAddress" android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/TextLabel">
+
+                <EditText android:id="@+id/landmark" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="LandMark"
+                    android:inputType="textEmailAddress" android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/TextLabel">
+
+                <EditText android:id="@+id/city" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="City"
+                    android:inputType="textEmailAddress" android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/TextLabel">
+
+                <EditText android:id="@+id/zone" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Zone"
+                    android:inputType="textEmailAddress" android:maxLines="1"
+                    android:singleLine="true"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/TextLabel">
+
+                <EditText android:id="@+id/lat" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Latitude"
+                    android:inputType="textEmailAddress" android:maxLines="1"
+                    android:singleLine="true"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/TextLabel">
+
+                <EditText android:id="@+id/longitude" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Longitude"
+                    android:inputType="textEmailAddress" android:maxLines="1"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/TextLabel"
+                >
+
+                <EditText android:id="@+id/issueType" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Issue Type"
+                    android:inputType="textEmailAddress" android:maxLines="1"
+                    android:singleLine="true"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/TextLabel"
+                >
+
+                <EditText android:id="@+id/subissue" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Sub Issue"
+                    android:inputType="textEmailAddress" android:maxLines="1"
+                    android:singleLine="true"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/TextLabel"
+                >
+
+                <EditText android:id="@+id/issuetime" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Issue Time"
+                    android:inputType="textEmailAddress" android:maxLines="1"
+                    android:singleLine="true"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/TextLabel"
+                >
+
+                <EditText android:id="@+id/issue" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Issue"
+                    android:inputType="textEmailAddress" android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/TextLabel">
+
+                <EditText android:id="@+id/altnumber" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Alt Number"
+                    android:inputType="number" android:maxLines="1"
+                    android:singleLine="true"
+                    android:maxLength="10"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button android:id="@+id/submit" style="?android:textAppearanceSmall"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:text="Submit"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:padding="5dp"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:text="Ticket Number"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/ticketNumberTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:text="Ticket Origin Date"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/originedateTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/resolveTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:text="Resolve Date"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/resolvedateTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/summery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:text="Ticket Summery"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/ticketsummery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:text="Phone Number"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/phonenoTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:text="Zone"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/zoneTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+           >
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/btncolor"
+            android:text="Mark As Resolved"
+           android:padding="10dp"  android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:id="@+id/commentBtn"/>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btncolor"
+                android:text="Mark As Unresolved"
+                android:layout_marginLeft="40dp"
+                android:padding="10dp"  android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:id="@+id/resendBtn"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>
